@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/svg/Logo-alura.svg" alt="Logo-alura">
+    </header>
+    <main>
+        <form class="form__seccion">
+            <textarea class="form__input" name="Escribir mensaje" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="btn__container"></div>
+            <div class="submit__container">
+                <div class="alert__msj">
+                    <a href="https://www.youtube.com/watch?v=uylXP8IK1Jc" target="_blank">
+                        <img src="./assets/svg/Alerta.svg" alt="Alerta">
+                    </a>
+                    
+                    <span></span>Solo letras minúsculas y sin acentos
+                </div>
+            </div>
+            <input class="form__boton" type="submit" value="Encriptar">
+            <input class="form__boton form__boton--secundary" type="submit" value="Desencriptar">
+        </form>
+        <aside class="result">
+            <img src="assets/img/muñeco.png" alt="Imagen de muñeco" class="result__img">
+            <div class="loader hidden"></div>
+            <div class="result__container">
+                <h3 class="result__title">Ningún mensaje fue encontrado</h3>
+                <p class="result__text">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button class="result__btn form__boton form__boton--secundary hidden">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <script src="encriptador.js"></script>
+</body>
+</html>
